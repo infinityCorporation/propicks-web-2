@@ -1,0 +1,108 @@
+.test-pev-info-content {
+    height: 100vh;
+    background-color: var(--brand-shade-500);
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Base container */
+.pev-info-container {
+    height: calc(100% - 120px);
+    max-width: 960px;
+    margin: 0 auto 24px auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    color: #1e1e1e;
+    background-color: var(--brand-shade-500);
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  
+  /* Info card */
+  .info-card {
+    background-color: var(--brand-shade-300);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.25s ease;
+    color: var(--light-grey-100);
+  }
+  
+  .info-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 18px var(--medium-grey-400);
+  }
+
+  .card-final {
+    margin-bottom: 64px;
+  }
+  
+  /* Titles */
+  .info-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--light-grey-100);
+    margin-bottom: 1rem;
+  }
+  
+  /* Paragraph text */
+  .info-text {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    color: var(--light-grey-300);
+  }
+  
+  /* Steps */
+  .step {
+    display: inline-block;
+    font-weight: 600;
+    color: var(--light-grey-100);
+    margin-right: 0.25rem;
+    text-decoration: none;
+  }
+  
+  /* List styling */
+  .info-list {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--light-grey-500);
+  }
+  
+  .info-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  /* Links */
+  a {
+    color: #2b6cb0;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #2c5282;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .pev-info-container {
+      padding: 1rem;
+    }
+  
+    .info-card {
+      padding: 1.5rem;
+    }
+  
+    .info-title {
+      font-size: 1.5rem;
+    }
+  
+    .info-text {
+      font-size: 1rem;
+    }
+  }
+  

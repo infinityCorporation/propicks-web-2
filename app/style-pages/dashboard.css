@@ -1,0 +1,366 @@
+body {
+  margin: 0;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Roboto', sans-serif;
+}
+  
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+  
+.main-dashboard-content {
+  padding: 0px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  width: 83%;
+  margin-left: max(17%, 237px);
+  background: linear-gradient(165deg, #8154bd, #003366, #69419c, #1c1c1c);  
+}
+.main-content h2 {
+  color: #58a6ff;
+}
+  
+.modules {
+  display: flex;
+  gap: 0px;
+  height: calc(100vh);
+}
+  
+.module {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.signin-dash-button {
+  width: 90%;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.dashboard-header {
+  margin-top: 0px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 850px;
+}
+  
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+  
+.account-module {
+  background-color: #161b22;
+  padding: 20px;
+  color: #c9d1d9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.account-module::-webkit-scrollbar {
+  display: none;
+}
+
+.welcome-module {
+  background-color: #161b22;
+  padding: 20px;
+  color: #c9d1d9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+}
+
+.chat-stream-module {
+  background-color: #161b22;
+  padding: 0px;
+  color: #c9d1d9;
+  overflow: hidden;
+  flex: 2;
+  flex-shrink: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-right: 2px solid rgb(178, 178, 178);
+  border-left: 2px solid rgb(178, 178, 178);
+  padding-top: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.chat-stream-module::-webkit-scrollbar {
+  display: none;
+}
+
+.main-chat-stream {
+  height: calc(100% - 40px);
+  width: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0px;
+}
+.main-chat-stream::-webkit-scrollbar {
+  display: none;
+}
+
+.dashboard-input-group {
+  width: 100%;
+  padding: 0px;
+  height: 40px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-input-button {
+  height: 40px;
+  width: 25%;
+  margin-top: 0px;
+  border-radius: 0px;
+}
+
+.dashboard-chat-input-field {
+  margin: 0px;
+  padding: 10px;
+  width: 75%;
+  margin-top: 0px;
+  cursor: pointer;
+  border: 0px solid transparent;
+}
+.dashboard-chat-input-field:focus {
+  cursor:text;
+  outline: none;
+  border: 2px solid #4d94e4;
+}
+
+.dashboard-team-feed-message {
+  height: auto;
+  background-color: #161b22;
+  border-radius: 0px;
+  width: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-top: 2.5px;
+  border-bottom: 1px solid rgb(74, 74, 74)
+}
+
+.chat-button-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-chat-user {
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.user-forum-span {
+  color: rgb(172, 170, 170);
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.forum-span {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.dashboard-chat-content {
+  font-size: 1.07em;
+  font-weight: 400;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.dashboard-user-section-header {
+  color: #4d94e4;
+}
+
+.team-name-display-div {
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+  height: 30px;
+  width: 50%;
+  border-radius: 4px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.team-name-display-div:hover {
+  background-color: #353d47;
+}
+.team-name-display-div:active {
+  background-color: #555d67;
+}
+
+.button-div-chats {
+  height: 30px;
+  justify-content: baseline;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+
+.chat-button-like {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  padding-top: 4px; 
+  background-color: #161b22;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.chat-button-like:hover {
+  background-color: #353d47;
+}
+.chat-button-like:active {
+  background-color: #555d67;
+}
+
+.chat-button-reply {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  padding-top: 4px; 
+  background-color: #161b22;
+  border-radius: 5px;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+.chat-button-reply:hover {
+  background-color: #353d47;
+}
+.chat-button-reply:active {
+  background-color: #555d67;
+}
+
+.chat-button-share {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  padding-top: 4px; 
+  background-color: #161b22;
+  border-radius: 5px;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+.chat-button-share:hover {
+  background-color: #353d47;
+}
+.chat-button-share:active {
+  transition: background-color 0.4s ease;
+  background-color: #64c590;
+}
+
+.dashboard-team-betting-market-chat {
+  flex: 0 0 400px; 
+  width: auto; 
+  max-width: 400px;
+  margin: 0; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  background-color: #161b22; 
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-bottom: 15px;
+  color: white;
+}
+.dashboard-team-betting-market-chat:hover {
+  background-color: #222933;
+  border-color: #58a6ff;
+  color: white;
+}
+.dashboard-team-betting-market-chat:active {
+  background-color: rgb(101, 98, 105);
+  color: white;
+}
+
+.team-betting-lines {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2%;
+}
+
+.specific-line-display {
+  width: 49%;
+  border: 1px solid grey;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  padding: 3px;
+}
+
+.team-betting-line-title {
+  height: 10px;
+  margin-top: 0px;
+}
+
+.team-betting-line-key {
+  height: 10px;
+}
+
+.team-betting-line-info {
+  height: 40px;
+  margin-top: 0px;
+}
+
+.dashboard-user-section-divider {
+  width: 80%;
+  height: 1px;
+  border-bottom: 1px solid grey;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.too-long:focus {
+  border: 1px solid red;
+}
+
+.liked {
+  filter: hue-rotate(30deg)
+}
+
+.verified {
+  color: #ffbf00;
+}
+
+@media(max-width: 1325px){
+  .right {
+    display: none;
+  }
+  .left {
+    flex: 1;
+  }
+}
+  

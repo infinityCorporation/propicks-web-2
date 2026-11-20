@@ -1,0 +1,156 @@
+/* ── Poll container ── */
+.poll-component {
+  margin: 4px 12px 4px 0px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #474747;
+}
+
+.poll-loading-text {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+/* ── Poll header ── */
+.poll-header {
+  margin-bottom: 2px;
+}
+
+.poll-question {
+  font-size: 15px;
+  font-weight: 500;
+  color: #f0f0f0;
+  margin: 0 0 2px 0;
+  padding: 0 3px;
+}
+
+.poll-meta {
+  font-size: 12px;
+  color: #595959;
+  margin: 0 0 14px 0;
+  padding: 0 3px;
+}
+
+/* ── Poll options wrapper ── */
+.poll-options {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Pre-vote option buttons ── */
+.option-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #1f2023;
+  border: 0.5px solid #26282b;
+  border-radius: 10px;
+  padding: 10px 12px;
+  min-height: 40px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.option-container:hover {
+  background-color: #26282b;
+}
+
+.option-btn-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid #474747;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* ── Post-vote result rows ── */
+.option-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.5px solid #26282b;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  min-height: 40px;
+  overflow: hidden;
+  background-color: #18191b;
+  box-sizing: border-box;
+}
+
+.progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.progress-fill--default {
+  background-color: #1f2023;
+}
+
+.progress-fill--voted {
+  background-color: rgba(71, 117, 255, 0.15);
+}
+
+.option-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+
+.check-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #4775ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.check-mark {
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.option-text {
+  font-size: 14px;
+  color: #b3b3b3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.option-text--voted {
+  font-weight: 600;
+  color: #668cff;
+}
+
+.percentage-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #595959;
+  margin-left: 10px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.percentage-label--voted {
+  color: #4775ff;
+}

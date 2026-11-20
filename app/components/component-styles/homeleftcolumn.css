@@ -1,0 +1,232 @@
+.left-column-container {
+    height: 95%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.scrollable {
+    overflow-y: scroll;
+}
+
+#left-column-container {
+    height: 104%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+/*
+.new-user-info-container {
+    width: 300px;
+    height: 97%;
+    padding: 8px 18px 8px 12px;
+    border-right: 1px solid var(--brand-shade-100);
+}
+*
+.new-user-info-container {
+    width: 300px;
+    height: auto;
+    padding: 2px 18px 4px 12px;
+    border: 2px solid var(--medium-grey-100);
+    background-color: var(--brand-shade-400);
+    border-radius: 12px;
+}
+*/
+
+.new-user-info-container {
+    border: 2px solid transparent; /* Needed to show border area */
+    border-radius: 12px; /* Optional: makes it smoother */
+    background: linear-gradient(var(--brand-shade-400), var(--brand-shade-400)) padding-box, /* Inner content background */
+                linear-gradient(to bottom, #fca311, #e1306c, #833ab4) border-box; /* Border gradient */
+    width: 286px;
+    height: auto;
+    padding: 2px 18px 4px 12px;
+    margin-top: 4px;
+}
+
+.new-user-info-title {
+    font-size: 18px;
+    color: var(--light-grey-100);
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.new-user-info-subtitle {
+    font-size: 14px;
+    color: var(--light-grey-500);
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 24px;
+}
+
+.left-sign-up-button {
+    border: none;
+    height: 36px;
+    width: 100%;
+    background-color: var(--accent-shade-500);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s ease;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.left-sign-up-button p {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: var(--light-grey-100)
+}
+.left-sign-up-button:hover {
+    background-color: var(--accent-shade-450);
+}
+.left-sign-up-button:active {
+    background-color: var(--accent-shade-550);
+}
+
+.google-button {
+    margin-top: 12px;
+}
+
+.left-sign-in {
+    height: 36px;
+    width: 100%;
+    background-color: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.left-sign-in p {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    color: var(--light-grey-400);
+    cursor: pointer;
+}
+.left-sign-in p:hover {
+    text-decoration: underline;
+    color: var(--light-grey-200);
+}
+.left-sign-in p:active {
+    color: var(--light-grey-100);
+}
+
+.arbitrage-winners-column {
+    width: 286px;
+    height: auto;
+    padding: 2px 18px 4px 12px;
+    border: 2px solid var(--medium-grey-500);
+    background-color: var(--brand-shade-400);
+    border-radius: 12px;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+.winner-top-display {
+    /*border: 2px solid transparent; /* Needed to show border area */
+    /*border-radius: 12px; /* Optional: makes it smoother */
+    /*background: linear-gradient(var(--brand-shade-400), var(--brand-shade-400)) padding-box, /* Inner content background */
+    /*            linear-gradient(to right, #fca311, #e1306c, #833ab4) border-box; /* Border gradient */
+    width: 286px;
+    height: auto;
+    padding: 2px 18px 4px 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.winner-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--brand-shade-100);
+}
+
+.winner-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.winner-name img {
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-left: 8px;
+}
+
+.contact-info {
+    color: var(--light-grey-600);
+}
+
+.first-place p {
+    font-weight: 500;
+}
+.first-place-label {
+    color: lightgreen;
+}
+
+.last-place {
+    border-bottom: none;
+}
+
+.standard-comp-label {
+    color: var(--light-grey-100);
+    cursor: pointer;
+}
+
+.leaderboard {
+    margin: 0 0 9px 0;
+}
+
+.main-dash-ad-frame {
+    width: 266px;
+    height: 200px;
+    border: 2px solid var(--medium-grey-500);
+    background-color: var(--brand-shade-400);
+    border-radius: 12px;
+    margin-top: 16px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.extra-space-hl {
+    margin-top: 0;
+    margin-bottom: 12px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease background-color 0.2s ease;
+}
+
+.slightly-bigger {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.extra-space-hl:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media(max-width: 1150px) {
+    .main-dash-ad-frame {
+        display: none;
+    }
+}
+
+@media(max-width: 900px){
+    .arbitrage-winners-column {
+        display: none;
+    }
+    .winner-top-display {
+        display: none;
+    }
+    .new-user-info-container {
+        display: none;
+    }
+    .main-dash-ad-frame {
+        display: none;
+    }
+}

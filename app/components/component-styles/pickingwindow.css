@@ -1,0 +1,453 @@
+.picking-window-1 {
+    height: 400px;
+    width: 540px;
+    background-color: var(--brand-shade-400);
+    border: 1px solid var(--brand-shade-100);
+    border-radius: 12px;
+    padding: 0px;
+    margin-top: 18px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.picking-window-1::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: transparent;
+    width: 0px;
+}
+.picking-window-1::-webkit-scrollbar-thumb {
+    outline: none;
+    border: none;
+}
+.picking-window-1::-webkit-scrollbar {
+    width: 6px;
+}
+
+.picking-window-2 {
+    height: 400px;
+    width: 540px;
+    background-color: var(--brand-shade-400);
+    border: 1px solid var(--brand-shade-100);
+    border-radius: 12px;
+    margin-top: 18px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.picking-window-3 {
+    height: 200px;
+    width: 540px;
+    background-color: var(--brand-shade-400);
+    border: 1px solid var(--brand-shade-100);
+    border-radius: 12px;
+    padding: 12px;
+    margin-top: 24px;
+}
+
+.pick-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.pick-content-lines {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.pick-book-module {
+    border: 1px solid var(--brand-shade-100);
+    border-radius: 8px;
+    background-color: var(--brand-shade-300);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.15s border;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.pick-book-module:hover {
+    border: 1px solid var(--medium-grey-500);
+}
+.pick-book-module:active {
+    border: 1px solid var(--accent-shade-400);
+}
+.pick-book-module p {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.pick-book-module-active {
+    border: 1px solid var(--accent-shade-500);
+    transition: 0.15s border;
+}
+.pick-book-module-active:hover {
+    border: 1px solid var(--accent-shade-400);
+}
+
+.pick-book-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+}
+.pick-book-info img {
+    border-radius: 50%;
+}
+
+.sport-pick-module {
+    border: 1px solid var(--brand-shade-100);
+    border-radius: 8px;
+    background-color: var(--brand-shade-300);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.15s border;
+}
+.sport-pick-module:hover {
+    border: 1px solid var(--medium-grey-500);
+}
+.sport-pick-module:active {
+    border: 1px solid var(--accent-shade-400);
+}
+.sport-pick-module p {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.sport-pick-module-active {
+    border: 1px solid var(--accent-shade-500);
+    transition: 0.15s border;
+}
+.sport-pick-module-active:hover {
+    border: 1px solid var(--accent-shade-400);
+}
+
+.pick-back-button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    margin: none;
+    text-align: left;
+    height: 17px;
+    cursor: pointer;
+    width: 72px;
+    margin-bottom: 12px;
+}
+.pick-back-button p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-grey-600);
+    margin: 0;
+}
+.pick-back-button p:hover {
+    color: var(--light-grey-300);
+}
+.pick-back-button p:active {
+    color: var(--medium-grey-200);
+}
+
+.game-pick-module {
+    border: 1px solid var(--brand-shade-100);
+    border-radius: 8px;
+    background-color: var(--brand-shade-300);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: 0.15s border;
+}
+.game-pick-module:hover {
+    border: 1px solid var(--medium-grey-500);
+}
+.game-pick-module:active {
+    border: 1px solid var(--accent-shade-400);
+}
+.game-pick-title {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.game-pick-module-active {
+    border: 1px solid var(--accent-shade-500);
+    transition: 0.15s border;
+}
+.game-pick-module-active:hover {
+    border: 1px solid var(--accent-shade-400);
+}
+
+.game-pick-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.game-pick-time-info {
+    color: var(--light-grey-600);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.bet-pick-scroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 6px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.bet-pick-scroll::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.line-pick-module {
+    border: 2px solid var(--brand-shade-100);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: 0.1s border;
+}
+.line-pick-module:hover {
+    border-color: var(--medium-grey-300);
+}
+.line-pick-module:active {
+    border-color: var(--accent-shade-400);
+}
+
+.line-pick-book-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+.line-pick-book-info p {
+    font-size: 16px;
+    margin: 0;
+    color: var(--light-grey-100);
+}
+
+.line-pick-outcomes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.line-pick-outcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--brand-shade-100);
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.bet-display-title-container {
+    background-color: var(--brand-shade-200);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 12px;
+    height: 24px;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.bet-display-title-container:hover {
+    background-color: var(--brand-shade-100);
+}
+
+.bet-display-title {
+    font-size: 16px;
+    color: var(--light-grey-100);
+}
+
+.pick-back-button-lines {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    margin: none;
+    text-align: left;
+    height: 17px;
+    cursor: pointer;
+    width: 72px;
+    margin-top: 12px;
+    margin-left: 8px;
+}
+.pick-back-button-lines p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-grey-600);
+    margin: 0;
+}
+.pick-back-button-lines p:hover {
+    color: var(--light-grey-300);
+}
+.pick-back-button-lines p:active {
+    color: var(--medium-grey-200);
+}
+
+.make-pick-outcomes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.make-pick-outcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--brand-shade-100);
+    border-radius: 10px;
+    padding: 10px 12px;
+    transition: 0.15s border;
+    cursor: pointer;
+    border: 1px solid var(--brand-shade-100)
+}
+.make-pick-outcome p {
+    font-size: 15px;
+    color: var(--light-grey-100);
+    margin: 0;
+}
+.make-pick-outcome:hover {
+    border: 1px solid var(--medium-grey-300);
+}
+.make-pick-outcome:active {
+    border: 1px solid var(--accent-shade-400);
+}
+
+.outcome-active {
+    border: 1px solid var(--accent-shade-500);
+    transition: 0.15s border;
+}
+.outcome-active:hover {
+    border: 1px solid var(--accent-shade-400);
+}
+
+.make-pick-book-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+.make-pick-book-info img {
+    border-radius: 50%;
+}
+.make-pick-book-info p {
+    font-size: 17px;
+    margin: 0;
+}
+
+.make-pick-wager {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.wager-input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 4px;
+}
+.wager-input-group input {
+    background-color: var(--brand-shade-200);
+    border-radius: 8px;
+    border: 1px solid var(--medium-grey-600);
+    font-size: 15px;
+    color: var(--light-grey-100);
+    font-family: 'Inter', sans-serif;
+    resize: none;
+    line-height: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    counter-increment: none;
+    text-align: left;
+    padding: 6px 10px;
+    width: 108px;
+    height: 32px;
+    transition: 0.1s border;
+}
+.wager-input-group input:hover {
+    outline: none;
+    border: 1px solid var(--medium-grey-400);
+}
+.wager-input-group input:focus {
+    outline: none;
+    border: 1px solid var(--medium-grey-200);
+}
+
+.make-pick-button {
+    width: 144px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--accent-shade-500);
+    transition: 0.1s background-color;
+    cursor: pointer;
+    margin-top: 132px;
+    margin-left: calc(50% - 72px)
+}
+.make-pick-button p {
+    font-size: 16px;
+    color: var(--light-grey-100);
+}
+.make-pick-button:hover {
+    background-color: var(--accent-shade-400);
+}
+.make-pick-button:active {
+    background-color: var(--accent-shade-550);
+}
+
+.make-pick-button-inactive {
+    background-color: var(--brand-shade-100);
+}
+.make-pick-button-inactive:hover {
+    background-color: var(--medium-grey-600);
+}
+.make-pick-button-inactive:active {
+    background-color: var(--medium-grey-500);
+}
+
+.make-pick-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}

@@ -1,0 +1,372 @@
+.profile-content {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    width: 83%;
+    margin-left: max(17%, 230px);
+  }
+  
+  .main-content h2 {
+    color: #58a6ff;
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    display: flex;
+  }
+  
+  .button-container button {
+    background-color: #484c51;
+    color: #c9d1d9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .button-container button:hover {
+    background-color: #565d64;
+  }
+
+  .profile-header-div {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    min-width: 400px;
+    justify-content: left;
+    height: 50px;
+    border-radius: 0px;
+    background-color: #21262d;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .profile-header-div h2 {
+    height: 100%;
+    color: #58a6ff;
+    width: 35%;
+    align-content: center;
+  }
+
+  .profile-header-div p {
+    height: 100%;
+    color: white;
+    width: 25%;
+  }
+
+  .counter-div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+  }
+  
+  .counter-div h3 {
+    height: 4px;
+    margin-top: 7.5px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .counter-div p {
+    height: 4px;
+    width: 100%;
+  }
+
+  .profile-sidebar {
+    height: calc(100vh - 140px);
+    flex: 2;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid white;
+  }
+
+  .profile-sidebar-info {
+    background-color: #21262d;
+    border-radius: 0px;
+    padding: 15px;
+    margin-bottom: 10px;
+    height: 100%;
+  }
+
+  .profile-button-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-sidebar button {
+    background-color: #21262d;
+    transition: background-color 0.3s ease;
+    text-align: left;
+  }
+  .profile-sidebar button:hover {
+    background-color: #353d47; 
+  }
+  .profile-sidebar button:active {
+    background-color: #555d67;
+  }
+
+  .profile-mid-section {
+    width: calc(80% + 20px);
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    min-width: 600px;
+  }
+
+  .profile-info-section-divider {
+    height: 0px;
+    border: 1px solid grey;
+    width: 90%;
+  }
+
+  .profile-sidebar-info-text-container {
+    padding-left: 20px;
+
+  }
+
+  .profile-sidebar-info-text-container p {
+    font-size: 17px;
+  }
+
+  .profile-chat-stream {
+    height: calc(100vh - 150px);
+    flex: 4;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border-radius: 0px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+  }
+  .profile-chat-stream::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .profile-team-feed-message {
+    height: auto;
+    background-color: #161b22;
+    border-radius: 0px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-top: 2.5px;
+    border-bottom: 1px solid rgb(74, 74, 74)
+  }
+
+.login-cta-div {
+  width: 25%;
+  text-align: center;
+  margin-left: 37.5%;
+}
+
+.no-posts-cta {
+  width: 80%;
+  height: 200px;
+  text-align: center;
+  cursor:default;
+}
+
+.chat-button-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-user {
+  font-weight: 600;
+  font-size: 0.86em;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.user-forum-span {
+  color: rgb(172, 170, 170);
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.forum-span {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.chat-content {
+  font-size: 1.05em;
+  font-weight: 200;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.team-name-display-div {
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+  height: 30px;
+  width: 50%;
+  border-radius: 4px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.team-name-display-div:hover {
+  background-color: #353d47;
+}
+.team-name-display-div:active {
+  background-color: #555d67;
+}
+
+.button-div-chats {
+  height: 30px;
+  justify-content: baseline;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+
+.chat-button-like {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  padding-top: 4px; 
+  background-color: #161b22;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.chat-button-like:hover {
+  background-color: #353d47;
+}
+.chat-button-like:active {
+  background-color: #555d67;
+}
+
+.chat-button-reply {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  padding-top: 4px; 
+  background-color: #161b22;
+  border-radius: 5px;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+.chat-button-reply:hover {
+  background-color: #353d47;
+}
+.chat-button-reply:active {
+  background-color: #555d67;
+}
+
+.chat-button-delete {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  padding-top: 4px; 
+  background-color: #161b22;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.chat-button-delete:hover {
+  background-color: #353d47;
+}
+.chat-button-delete:active {
+  background-color: #555d67;
+}
+
+.profile-team-betting-market-chat {
+  flex: 0 0 400px; 
+  width: auto; 
+  max-width: 400px;
+  margin: 0; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  background-color: #161b22; 
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-bottom: 15px;
+  color: white;
+}
+.profile-team-betting-market-chat:hover {
+  background-color: #222933;
+  border-color: #58a6ff;
+  color: white;
+}
+.profile-team-betting-market-chat:active {
+  background-color: rgb(101, 98, 105);
+  color: white;
+}
+
+.team-betting-lines {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2%;
+}
+
+.specific-line-display {
+  width: 49%;
+  border: 1px solid grey;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  padding: 3px;
+}
+
+.team-betting-line-title {
+  height: 10px;
+  margin-top: 0px;
+}
+
+.team-betting-line-key {
+  height: 10px;
+}
+
+.team-betting-line-info {
+  height: 40px;
+  margin-top: 0px;
+}
+
+@media (max-width: 910px) {
+  .profile-chat-stream {
+    width: 80%;
+    min-width: 500px;
+  }
+  .profile-sidebar {
+    display: none;
+  }
+  .profile-header-div {
+    min-width: 500px;
+  }
+}

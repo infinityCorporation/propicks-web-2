@@ -1,0 +1,240 @@
+.arb-grid-container {
+    height: calc(300px - 24px);
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid var(--medium-grey-600);
+    background-color: var(--brand-shade-400);
+    padding: 12px 20px;
+    box-sizing: border-box;
+    transition: border 0.15s ease;
+    cursor: pointer;
+}
+.arb-grid-container:hover {
+    border: 2px solid var(--accent-shade-400);
+}
+
+.arb-grid-event-title-group {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.arb-grid-event-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--light-grey-100);
+    margin: 6px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.arb-grid-event-time {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: var(--medium-grey-100);
+    margin: 6px 0;
+}
+
+.arb-grid-event-percent {
+    width: 72px;
+    text-align: center;
+    background-color: rgb(51 255 108 / 10%);
+    border-radius: 10px;
+    margin-top: 6px;
+}
+.arb-grid-event-percent p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: var(--accent-green);
+    margin: 6px 0;
+    z-index: 2;
+}
+
+.arb-grid-bet-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.grid-bet-side {
+    height: calc(108px - 12px);
+    flex: 1;
+    border-radius: 8px;
+    border: 1px solid var(--dark-grey-100);
+    padding: 6px 12px;
+}
+
+.grid-bet-side-header-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-bet-side-price {
+    height: 24px;
+    width: auto;
+    padding: 0 6px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(222 222 222 / 10%);
+}
+.grid-bet-side-price p {
+    margin: 6px 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: var(--light-grey-100);
+}
+
+.grid-bet-size-book {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 9px;
+}
+
+.grid-bet-size-book p {
+    margin: 6px 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: var(--light-grey-100);
+}
+
+.grid-bet-side-info {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: var(--light-grey-100);
+}
+
+.grid-side-size p {
+    margin: 6px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--light-grey-100);
+}
+
+.arb-grid-bottom-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arb-grid-bottom-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    height: 84px;
+    margin-top: 0;
+}
+
+.arb-grid-total {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    justify-content: left;
+    margin: 9px 3px;
+}
+.arb-grid-total p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-grey-100);
+    margin: 0;
+}
+.arb-grid-total input {
+    background-color: var(--brand-shade-300);
+    border: 1px solid var(--brand-shade-100);
+    border-radius: 6px;
+    font-size: 16px;
+    color: var(--light-grey-100);
+    width: 96px;
+    height: 24px;
+    padding: 0 3px;
+}
+.arb-grid-total input:hover, .arb-grid-total input:focus, .arb-grid-total input:active {
+    outline: none;
+    border: 1px solid var(--medium-grey-100);
+}
+
+.arb-grid-winnings p {
+    margin: 3px 0 6px 3px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-grey-100);
+}
+.grid-winnings-span {
+    font-weight: 500;
+}
+
+.arb-grid-bottom-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.arb-grid-see-more {
+    cursor: pointer;
+    height: 30px;
+    width: 96%;
+    border-radius: 8px;
+    border: 1px solid var(--brand-shade-100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-shade-300);
+    margin: 9px 0 3px 0;
+}
+.arb-grid-see-more p {
+    color: var(--accent-shade-400);
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.arb-grid-see-more:hover {
+    border: 1px solid var(--medium-grey-400);
+    background-color: var(--brand-shade-200);
+}
+
+.arb-grid-remove-bet {
+    cursor: pointer;
+    height: 30px;
+    width: 96%;
+    border-radius: 8px;
+    border: 1px solid var(--brand-shade-100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-shade-300);
+    margin: 3px 0 6px 0;
+}
+.arb-grid-remove-bet p {
+    color: var(--danger-shade-100);
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.arb-grid-remove-bet:hover {
+    border: 1px solid var(--medium-grey-400);
+    background-color: var(--brand-shade-200);
+}

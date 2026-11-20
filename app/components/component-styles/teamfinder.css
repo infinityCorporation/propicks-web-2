@@ -1,0 +1,16 @@
+.team-finder-container {
+    height: 600px;
+    width: 36%;
+    z-index: 2;
+    background-color: var(--brand-shade-400);
+    border-radius: 9px;
+    position: fixed;
+    left: calc(32% - 24px);
+    top: calc(50vh - 336px);
+    padding: 12px 24px 12px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+    border: 2px solid var(--medium-grey-400);
+}

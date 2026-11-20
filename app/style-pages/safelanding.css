@@ -1,0 +1,14 @@
+.safe-landing-content {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--brand-shade-700);
+}
+
+.section.hero.landing {
+    height: 100vh;
+}
+
+.top-part-hero.landing {
+    margin-top: 84px;
+}

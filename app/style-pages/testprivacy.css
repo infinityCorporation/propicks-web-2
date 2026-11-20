@@ -1,0 +1,71 @@
+.test-privacy-content {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--brand-shade-500);
+    overflow: hidden;
+}
+
+.test-privacy-container {
+    height: calc(100% - 60px);
+    width: 100%;
+}
+
+.test-privacy-container p {
+    color: black;
+}
+
+.privacy-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.privacy-container::-webkit-scrollbar-track {
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.privacy-container::-webkit-scrollbar-thumb {
+    outline: none;
+    border: none;
+    background-color: var(--medium-grey-200);
+}
+
+.privacy-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+    .privacy-container h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #2a2a2a;
+    }
+
+    .privacy-container p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    }
+
+    .privacy-container ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    }
+
+    .privacy-container ul li {
+    margin-bottom: 0.5rem;
+    }
+
+    .privacy-container strong {
+    font-weight: bold;
+    }

@@ -1,0 +1,108 @@
+.pev-content {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    width: 83%;
+    margin-left: max(17%, 230px);
+  }
+
+  .title-container {
+    height: 16vh;
+  }
+  
+  .main-content h2 {
+    color: #58a6ff;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    background-color: #21262d;
+    color: #c9d1d9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    background-color: #30363d;
+  }
+  
+  .table-container {
+    width: 100%;
+    overflow: auto;
+    max-height: 80vh;
+    position: relative;
+    margin-top: 2vh;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--brand-shade-400);
+  }
+
+  thead {
+    outline: 1px solid var(--brand-shade-100);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  thead th {
+    position: sticky;
+    top: 0;
+    background-color: #21262d;
+    color: var(--light-grey-400);
+    padding: 10px;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+  }
+  
+  .cell-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  tr:hover td {
+    background-color: #21262d;
+    cursor: pointer;
+  }
+  
+  .sign-in-cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 30%;
+    max-width: 400px;
+  }
+  
+  .pev-preview-header {
+    height: 25px;
+    margin: 0;
+    padding: 0;
+  }

@@ -1,0 +1,289 @@
+.test-group-content {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--brand-shade-500);
+}
+
+.test-group-container-large {
+    height: calc(100% - 53px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    overflow: hidden; /* 'none' is not a valid value */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    box-sizing: border-box; /* Ensures padding doesn't add to height */
+}
+
+.test-group-inside-content {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 16px;
+    flex: 1;        /* fills remaining width after sidenav */
+    min-width: 0;   /* prevents overflow if content is wide */
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: calc(100% - 275px);
+    margin-left: 255px;
+}
+
+.test-group-inside-content-small {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0px;
+    flex: 1;        /* fills remaining width after sidenav */
+    min-width: 0;   /* prevents overflow if content is wide */
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: calc(100% - 275px);
+    margin-left: 255px;
+}
+
+.test-group-container-small {
+    height: calc(100% - 53px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    overflow: hidden; /* 'none' is not a valid value */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    box-sizing: border-box; /* Ensures padding doesn't add to height */
+}
+
+.chat-side {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: var(--brand-shade-400);
+    height: calc(100% - 22px);
+    padding: 0px 6px 6px 6px;
+    border: 1px solid var(--brand-shade-100);
+    border-radius: 16px;
+    margin: 8px 0;
+    overflow: hidden;
+}
+
+.information-side {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.information-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.member {
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 9px;
+}
+.member img {
+    border-radius: 50%;
+}
+
+.group-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--light-grey-100);
+}
+
+.group-description {
+    font-size: 0.98em;
+    font-weight: 400;
+    color: var(--light-grey-300);
+}
+
+.top-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--brand-shade-500);
+    padding: 0 12px;
+    width: calc(100% - 16px);
+}
+
+.lower-chat {
+    background-color: var(--brand-shade-400);
+    height: calc(100% - 66px);
+    padding: 0px 6px 6px 6px;
+    border: 1px solid var(--brand-shade-100);
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    margin-bottom: 4px;
+}
+
+.group-messages {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 12px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 10px 1px 26px 1px;
+}
+
+.group-message {
+    width: calc(60% - 20px);
+    height: auto;
+    background-color: var(--brand-shade-200);
+    border: 1px solid var(--medium-grey-500);
+    border-radius: 8px;
+    padding: 9px;
+}
+
+.message-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 9px;
+}
+.message-header img {
+    border-radius: 50%;
+}
+.message-header p {
+    margin: 0;
+    color: var(--light-grey-500);
+    font-size: 0.93em;
+    cursor: pointer;
+}
+
+.message-content {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 0.97em;
+    color: var(--light-grey-100);
+}
+
+.current-user-message {
+    margin-left: 40%;
+    margin-right: 0;
+}
+
+.other-user-message {
+    margin-left: 0;
+    margin-right: 40%;
+}
+
+.group-options-button {
+    height: 24px;
+    width: 84px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--dark-grey-100);
+}
+.group-options-button:hover {
+    background-color: var(--dark-grey-200);
+}
+.group-options-button:active {
+    background-color: var(--dark-grey-300);
+}
+
+.message-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.message-footer p {
+    margin: 5px 0 3px 0;
+}
+
+.time-right {
+    justify-content: right;
+}
+
+.group-create {
+    margin-top: -16px;
+}
+
+.group-options-container {
+    height: 600px;
+    width: 30%;
+    z-index: 2;
+    background-color: var(--brand-shade-200);
+    border-radius: 8px;
+    position: fixed;
+    left: 35%;
+    top: calc(50vh - 324px);
+    padding: 12px 24px 12px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid var(--medium-grey-500);
+}
+
+.delete-group-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete-group-container p {
+    font-size: 0.97em;
+    font-weight: 400;
+    color: var(--light-grey-100);
+}
+
+.delete-group-button {
+    height: 28px;
+    width: 108px;
+    background-color: rgb(186, 41, 41);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-grey-100);
+    cursor: pointer;
+}
+.delete-group-button:hover {
+    background-color: rgb(169, 46, 46);
+}
+.delete-group-button:active {
+    background-color: rgb(139, 39, 39);
+}
+
+@media(max-width: 1200px) {
+    .test-group-container-large {
+        display: none;
+    }
+    .test-group-container-small {
+        display: flex;
+    }
+}

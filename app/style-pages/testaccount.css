@@ -1,0 +1,451 @@
+.test-profile-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--brand-shade-500);
+    overflow: hidden;
+}
+
+.test-profile-container {
+    display: flex;
+    flex-direction: row;  /* sidenav and content sit side by side */
+    height: calc(100vh - 52px);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 36px;
+}
+
+.test-profile-inside-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 16px;
+    flex: 1;        /* fills remaining width after sidenav */
+    min-width: 0;   /* prevents overflow if content is wide */
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: calc(100% - 280px);
+    padding-right: 25px;
+    margin-left: 255px;
+}
+
+/* ---------------------------------------------------------
+   PROFILE TOP CARD
+   Now sized by its content instead of a fixed 250px box, so
+   a long bio makes the card taller instead of clipping the
+   follower-stats line off the bottom.
+--------------------------------------------------------- */
+
+.test-profile-top {
+    width: 820px;
+    min-height: 250px;
+    background-color: var(--brand-shade-300);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden; /* keeps the banner image's corners clipped to the card radius */
+}
+
+.profile-top-backdrop {
+    width: 100%;
+    height: 120px;      /* fixed banner height, independent of the rest of the card */
+    overflow: hidden;
+}
+
+.profile-top-backdrop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* image always fills the banner regardless of its native aspect ratio */
+    display: block;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.profile-top-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: -40px;  /* pulls the avatar row up to overlap the banner */
+    width: calc(100% - 48px);
+    padding: 0 24px 20px 24px;
+    position: relative;
+}
+
+.name-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end; /* keeps the avatar, username baseline, and edit button aligned together */
+    gap: 12px;
+}
+.profile-image {
+    border-radius: 50%;
+    border: 4px solid var(--brand-shade-300);
+    background-color: var(--brand-shade-300);
+    flex-shrink: 0; /* never lets the row squeeze the avatar */
+}
+
+.name-container-sub-div {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 6px;
+    min-width: 0; /* lets the username truncate/wrap instead of forcing the row wider */
+}
+
+.username-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 6px;
+    min-width: 0;
+}
+
+.profile-username {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: var(--light-grey-100);
+    line-height: 24px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile-description {
+    width: 100%;         /* was 70% — that's what was fighting the stats line for space */
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--light-grey-100);
+    word-wrap: break-word; /* long unbroken text won't blow out the card width */
+}
+
+.edit-button-container {
+    height: 32px;
+    width: 121px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-shade-100);
+    border-radius: 8px;
+    border: 2px solid var(--medium-grey-500);
+    cursor: pointer;
+    gap: 6px;
+    flex-shrink: 0;     /* button keeps its size even if the name row gets tight */
+    align-self: flex-end;
+}
+.edit-button-container:hover {
+    background-color: var(--brand-shade-200);
+}
+.edit-button-container:active {
+    background-color: var(--brand-shade-400);
+    border: 2px solid var(--medium-grey-600);
+}
+.edit-button-container p {
+    font-size: 0.9em;
+}
+
+.edit-image {
+    border: none;
+}
+
+/* ---------------------------------------------------------
+   FEED / MID SECTION
+   flex:1 + min-height:0 lets this section actually claim the
+   remaining vertical space and scroll internally, instead of
+   sizing to its content and getting clipped by the parent's
+   overflow:hidden.
+--------------------------------------------------------- */
+
+.test-profile-mid {
+    width: 820px;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.test-profile-mid::-webkit-scrollbar {
+    width: 0;
+}
+
+.feed-content {
+    overflow-y: scroll;
+}
+
+.no-posts-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.no-posts-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    font-family: 'Inter', sans-serif;
+    color: var(--light-grey-100);
+    margin: 0;
+}
+
+.no-posts-subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
+    color: var(--medium-grey-100);
+    margin: 0;
+    width: 50%;
+    text-align: center;
+}
+
+.edit-screen {
+    height: auto;
+    width: 500px;
+    z-index: 2;
+    background-color: var(--brand-shade-400);
+    border-radius: 8px;
+    position: fixed;
+    left: calc(50% - 274px);
+    top: calc(50vh - 124px);
+    padding: 12px 24px 12px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    color: var(--light-grey-100);
+    border: 2px solid var(--medium-grey-500);
+}
+
+.edit-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.exit-button {
+    border-radius: 50%;
+    background-color: var(--brand-shade-500);
+    padding: 2px 2px 2px 2px;
+    cursor: pointer;
+}
+.edit-header p {
+    line-height: 18px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.change-username-container {
+    height: auto;
+    width: 100%;
+}
+.change-username-container p {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 16px;
+    margin: 4px 0 4px 0;
+}
+.change-username-container textarea {
+    height: 16px;
+    width: calc(100% - 12px);
+    vertical-align: center;
+    line-height: 16px;
+    padding: 9px 6px 9px 6px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+    background-color: var(--brand-shade-300);
+    border: 1px solid var(--dark-grey-200);
+    border-radius: 8px;
+    color: var(--light-grey-100);
+}
+.change-username-container textarea:focus {
+    outline: none;
+    border: 1px solid var(--medium-grey-500);
+}
+
+.change-bio-container {
+    height: auto;
+    width: 100%;
+    margin-top: 12px;
+}
+.change-bio-container p {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 16px;
+    margin: 4px 0 4px 0;
+}
+.change-bio-container textarea {
+    height: 64px;
+    width: calc(100% - 12px);
+    vertical-align: center;
+    line-height: 16px;
+    padding: 9px 6px 9px 6px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+    background-color: var(--brand-shade-300);
+    border: 1px solid var(--dark-grey-200);
+    border-radius: 8px;
+    color: var(--light-grey-100);
+}
+.change-bio-container textarea:focus {
+    outline: none;
+    border: 1px solid var(--medium-grey-500);
+}
+
+.save-button-container {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.edit-cancel-button {
+    height: 100%;
+    width: 48.5%;
+    background-color: var(--brand-shade-200);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.edit-cancel-button:hover {
+    background-color: var(--brand-shade-100);
+}
+.edit-cancel-button:active {
+    background-color: var(--brand-shade-300);
+}
+
+.edit-save-button {
+    height: 100%;
+    width: 48.5%;
+    background-color: var(--accent-shade-500);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.edit-save-button:hover {
+    background-color: var(--accent-shade-400);
+}
+.edit-save-button:active {
+    background-color: var(--accent-shade-600);
+}
+
+.share-screen textarea {
+    width: calc(100% - 12px);
+    padding: 12px 6px 12px 6px;
+    color: var(--light-grey-100);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92em;
+    line-height: 16px;
+    height: 16px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.share-header p {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: var(--light-grey-100);
+    margin: 6px;
+}
+
+.share-link {
+    resize: none;
+    height: 32px;
+    border: 1px solid var(--brand-shade-100);
+    border-radius: 6px;
+    width: 100%;
+    background-color: var(--brand-shade-300);
+    margin-top: 6px;
+}
+
+.share-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 18px;
+}
+
+.share-buttons {
+    height: 28px;
+    width: calc(108px - 12px);
+    background-color: var(--brand-shade-400);
+    border: none;
+    border-radius: 6px;
+    padding: 0px 6px 0px 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.share-buttons:hover {
+    background-color: var(--brand-shade-300);
+}
+
+@media(max-width: 900px) {
+    .test-profile-top {
+        width: 700px;
+    }
+    .test-profile-mid {
+        width: 700px;
+    }
+}
+
+@media(max-width: 710px) {
+    .test-profile-top {
+        width: 600px;
+    }
+    .test-profile-mid {
+        width: 600px;
+    }
+}
+
+@media(max-width: 600px) {
+    .test-profile-top {
+        width: 100%;
+        border-radius: 0;
+    }
+    .profile-top-backdrop img {
+        border-radius: 0;
+    }
+    .name-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .edit-button-container {
+        align-self: flex-start;
+    }
+    .test-profile-mid {
+        width: 100%;
+    }
+}
