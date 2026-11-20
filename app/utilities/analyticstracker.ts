@@ -1,7 +1,7 @@
 // AnalyticsTracker.js
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { logEvent } from 'firebase/analytics'; // import directly from Firebase
+import { useLocation } from 'react-router';
+import { logEvent } from 'firebase/analytics';
 import { analytics } from '../../firebase'; // your configured instance
 
 export function AnalyticsTracker() {

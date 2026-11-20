@@ -1,4 +1,4 @@
-export const promptUserComplete = (navigate) => {
+export const promptUserComplete = (navigate: any): any => {
     return (
         <>
             <div className='account-incomplete-container' >

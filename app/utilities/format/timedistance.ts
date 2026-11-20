@@ -1,8 +1,6 @@
-import { formatDistanceToNowStrict, formatDistance } from 'date-fns';
-
-export const getRelativeTime = (dateString) => {
-  const now = new Date();
-  const postDate = new Date(dateString);
+export const getRelativeTime = (dateString: any) => {
+  const now: any = new Date();
+  const postDate: any = new Date(dateString);
   const diffInMs = now - postDate;
   const diffInMinutes = Math.floor(diffInMs / 60000);
 

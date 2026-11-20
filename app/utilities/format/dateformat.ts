@@ -1,6 +1,6 @@
 import { format, parseISO } from 'date-fns';
 
-export const formatGameDateParts = (isoString) => {
+export const formatGameDateParts = (isoString: any) => {
   const date = parseISO(isoString);
   
   // 1. Establish the boundary dates (Current Date +/- 1 Month)

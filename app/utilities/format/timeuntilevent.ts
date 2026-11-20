@@ -1,6 +1,6 @@
-export default function timeUntilEvent(isoTimestamp) {
-  const now = new Date();
-  const eventTime = new Date(isoTimestamp);
+export function timeUntilEvent(isoTimestamp: any) {
+  const now: any = new Date();
+  const eventTime: any = new Date(isoTimestamp);
   const diffMs = eventTime - now;
 
   if (diffMs <= 0) return "Event is Live";

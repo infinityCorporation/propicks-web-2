@@ -1,13 +1,13 @@
+// This should be a component...
+
 import { useState, useEffect } from 'react';
-import { auditBetKey } from './auditkey';
 import { getBookLogo } from './getbooklogo';
 import { auditBetBook } from './auditbook';
 import { auditBetPercent } from './auditbetpercent';
-import { getTeamLogo } from './getteamlogo';
 
 import calendar from '../assets/calendar.png';
 
-export const ArbitrageRow = ({ bet, columns }) => {
+export const ArbitrageRow = ({ bet, columns }: any) => {
   let formattedTime;
 
   const date = new Date(bet.commence_time);

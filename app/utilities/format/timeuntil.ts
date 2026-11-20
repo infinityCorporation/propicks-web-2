@@ -1,6 +1,6 @@
-export const getTimeUntilFutureFacing = (dateString) => {
-  const now = new Date();
-  const postDate = new Date(dateString);
+export const getTimeUntilFutureFacing = (dateString: any) => {
+  const now: any = new Date();
+  const postDate: any = new Date(dateString);
   const diffInMs = postDate - now;
   const diffInMinutes = Math.floor(diffInMs / 60000);
 
