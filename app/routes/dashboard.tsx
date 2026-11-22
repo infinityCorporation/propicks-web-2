@@ -9,32 +9,28 @@ import { v4 as uuidv4 } from 'uuid';
 import debounce from 'lodash.debounce';
 import { useSearchParams } from 'react-router-dom';
 import { auth } from '../firebase.js';
-import AdSense from 'react-adsense';
+import Adsense from 'react-adsense';
 
-import { MainPostDisplay } from './utilities/mainpost.js';
-import { auditBetBook } from './utilities/auditbook.js';
-import { auditBetKey } from './utilities/auditkey';
-import { promptUserComplete } from './utilities/usercomplete.js';
-import { updateText } from './utilities/updatetext.js';
-import { handleInput } from './utilities/handleinput.js';
-import { handleKeyDown } from './utilities/handlekeydown.js';
-import { searchTeams } from './utilities/searchteams.js';
-import { AnalyticsTracker } from './utilities/analyticstracker.js';
+import { 
+    MainPostDisplay,
+    auditBetBook,
+    auditBetKey,
+    handleKeyDown,
+    updateText, 
+    promptUserComplete
+} from '~/utilities';
 
 import bets from './assets/bets.png';
 import team_chats from './assets/teams.png';
 import up from './assets/close.png';
-import search from './assets/search.png';
 import exit from './assets/exit.png';
 import nochats from './assets/text-bubble.png';
-import SignUpScreen from '../components/SignUpScreen';
-import ShareScreen from '../components/ShareScreen.js';
-import BetFinder from '../components/BetFinder.js';
-import HomeLeftColumn from '../components/HomeLeftColumn.js';
-import TeamFinder from './components/TeamFinder.js';
-import BetInfoScreen from './components/BetInfoScreen.js';
-import { promptUserDownload } from './utilities/promptuserdownload.js';
-import SideNav from './components/SideNav.js';
+import SignUpScreen from '~/components/SignUpScreen';
+import ShareScreen from '~/components/ShareScreen';
+import BetFinder from '~/components/BetFinder';
+import TeamFinder from '~/components/TeamFinder';
+import BetInfoScreen from '~/components/BetInfoScreen';
+import SideNav from '~/components/SideNav';
 
 export default function Dashboard() {
     const navigate = useNavigate();
